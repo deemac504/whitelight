@@ -1,0 +1,202 @@
+*** Whitelight Changelog ***
+
+2012.06.11 - version 1.2.0
+ * /includes/theme-js.php - Change 'third party' to 'third-party' and add 'third-party' as a dependency on 'general'.
+ * /includes/theme-functions.php - Change bloginfo('template_url') to get_template_directory_uri(). Add "alt" option to woo_get_post_images(). Add 'woothemes' textdomain to comment form labels.
+ * /includes/homepage-portfolio-panel.php - Replace bloginfo('template_directory') with get_template_directory_uri().
+ * /includes/widgets/widget-woo-twitter.php - Replace bloginfo('template_directory') with get_template_directory_uri().
+ * includes/js/general.js - Added single portfolio gallery to FitVids script
+ * header.php - Replace bloginfo( 'url' ) with home_url( '/' ).
+ * loop-portfolio.php - Convert gallery images to include the image tag, which makes use of the newly added "alt" attribute in the woo_get_post_images() function.
+
+2012.05.31 - version 1.1.22
+ * style.css - Fixed current page menu styling
+ * css/layout.css - Fixed current page menu styling
+
+2012.05.23 - version 1.1.21
+ * style.css - Fixed word-wrap and line-height for email address in the "Contact Us" widget. 
+
+2012.05.14 - version 1.1.20
+ * content.php - fix for more tag on homepage
+ * includes/homepage-portfolio-panel.php - fix for videos in lightbox gallery
+ * includes/theme-options.php - fix for videos in lightbox gallery
+ 
+2012.05.07 - version 1.1.19
+ * archive-features.php - implemented post_type_archive_title()
+ * includes/hompeage-features-panel.php - remove features img tag if not uploaded image
+ 
+2012.05.03 - version 1.1.18
+ * styles/*.css - Fixed alt styles for child themes
+
+2012.04.23 - version 1.1.17
+ * includes/homepage-blog-alt-panel.php - fixed thumbnail theme options settings
+ * loop-portfolio.php - added filter for gallery slugs
+
+2012.04.19 - version 1.1.16
+ * index.php - fixed pagination variable
+ * homepage-blog-panel.php - fixed pagination variable
+ * loop-portfolio.php - fixed pagination variable
+ * template-blog.php - fixed pagination variable
+ 
+2012.04.16 - version 1.1.15
+ * styles/white-leather.css - Fixed drop-down hover colors
+
+2012.04.10 - version 1.1.14
+ * style.css - Changed breadcrumbs to fade out instead of wrap to new line on smaller screens
+ * styles/*.css - Fixed text title & decription colors for custom options
+ * includes/widgets/widget-woo-componentbase.php - fixed bug for multiple components per widgetized area
+
+2012.04.02 - version 1.1.13
+ * style.css - Clearfix for homepage features
+ * includes/homepage-features-panel.php - Clearfix for features
+ * includes/homepage-blog-panel.php - fix for categories filter
+
+2012.03.29 - version 1.1.12
+ * /includes/theme-functions.php - Contact Form Map undefined notice fix
+ 
+2012.03.28 - version 1.1.11
+ * styles/*.css - Fixed referance for feedback widget pagination images
+
+2012.03.26 - version 1.1.10
+ * style.css - Fixed iPhone resolution nav submenu link colors
+
+2012.03.22 - version 1.1.9
+ * /includes/theme-functions.php - Fixed bug on newline text for contact form google map call out
+ * /includes/theme-options.php - Fixed bug WooCommerce SEO custom fields tab
+ * style.css - Fixed portfolio tag styling (Firefox on Windows was misaligned)
+
+2012.03.15 - version 1.1.8
+ * style.css - Fixed portfolio tags styling bug in Firefox
+
+2012.03.13 - version 1.1.7
+ * styles/dark-wood.css,
+   styles/dark-glossy.css - Added lighter image for nav toggle
+
+2012.03.07 - version 1.1.6
+ * style.css - Styling for contact page map call out / popup
+ * /includes/theme-functions.php - added ability to add a callout to the contact map
+ * /includes/theme-options - added theme option to add a callout to the contact map
+ * /includes/js/marker.js - added ability to add a callout to the contact map
+
+2012.03.06 - version 1.1.5
+ * style.css - Removed "text-rendering: optimizeLegibility;" to fix dropdown bug in Chrome on Windows.
+
+2012.03.05 - version 1.1.4
+ * style.css - Subscribe & connect widget styling
+             - Feedback widget pagination z-index
+             - Contact page template header margin
+             - Footer nav active class fix
+ * template-contact.php - Removed "post" class to fix custom typography bug
+ * includes/theme-actions.php - Added "filter: none" on custom button colors for IE
+
+2012.02.29 - version 1.1.3
+ * loop-portfolio.php - Make sure the portfolio navigation directs to the term link if on a taxonomy archive screen.
+ * /includes/theme-functions.php - Make sure the portfolio navigation directs to the term link if on a taxonomy archive screen in woo_portfolio_navigation() function.
+
+2012.02.28 - version 1.1.2
+ * index.php - fixed pagination issue for homepage blog posts
+ * single-features.php - fixed icon output issue for single features page
+ * includes/theme-options.php - added option to change the features post type slug
+ * includes/theme-functions.php - fixed Leave a comment bug in post meta
+
+2012.02.27 - version 1.1.1
+ * layout.css - Adjusted margin for portfolio page
+ * includes/js/portfolio.js - Adjusted script to not affect homepage portfolio items
+ * loop-portfolio.php - Adjusted image size to account for padding
+ * images/temp-portfolio.php - Adjusted image size
+
+2012.02.21 - version 1.1.0
+ * style.css - Added styling for new contact widget, fixed subscribe & connect on contact page template. New blog panel styling.
+ * css/layout.css - Subscribe & Connect widget, removed dropdown animation to solve a conflict with normal slider in Safari
+ * content-search.php - thumbnail and alignment modifications
+ * content.php - thumbnail and alignment modifications
+ * includes/theme-options.php - thumbnail alignment options, new blog panel layout options
+ * single.php - thumbnail and alignment modifications
+ * template-blog.php - thumbnail and alignment modifications
+ * includes/theme-functions.php - removed page attributes from portfolio post type
+ * loop-portfolio.php - removed menu ordering from query, removed clearfix
+ * includes/js/portfolio.js - Fixed portfolio items height
+ * includes/widgets/wiget-woo-contactus.php - Added widget
+ * includes/widgets/wiget-woo-componentbase.php - Added new blog panel layout as an option
+ * includes/theme-widgets.php - Call for new contact widget
+ * template-contact.php - Fixed subscribe & connect
+ * includes/homepage-blog-alt-panel.php - New panel for alternate blog layout.
+ * includes/homepage-blog-panel.php - added ordering options.
+ * styles/*.css - Styling for new contact widget
+ * index.php - added new blog panel layout conditional
+ * includes/js/general.js removed unnecessary mobile safari styles, fitvids now applies to product descriptions too
+ * includes/images/feedback.php,
+   includes/js/feedback.js,
+   includes/js/slides.min.jquery.js,
+   includes/widgets/widget-woo-feedback.php,
+   template-feedback.php,
+   includes/theme-functions.php,
+   includes/theme-js.php,
+   includes/theme-options.php,
+   includes/theme-widgets.php - added feedback functionality, widget, and theme options
+
+2012.02.20 - version 1.0.6
+ * style.css - Fixed slider text cut off on iPhone, Portfolio template heading
+ * css/layout.css - Fixed slider text cut off on iPhone, IE8 normal width slider overflow fix
+ * includes/theme-functions.php - Added clearfix for subscribe & connect widget
+ * styles/dark-glossy.css - Fixed textarea background colours on commentforms. Twitter link color in footer widgets. Fixed drop down menu bug.
+ * styles/dark-wood.css - Fixed textarea background colours on commentforms. Fixed drop down menu bug.
+ 
+2012.02.17 - version 1.0.5
+ * includes/featured.php - Adjusted slider excerpt length
+ * template-contact.php - Fixed page title font
+ * styles/*.css - Fixed alt style for IE8
+
+2012.02.14 - version 1.0.4
+ * style.css - Fixed opacity for normal width slider current slide on small screens. Fixed tag cloud spacing. Nav toggle styling.
+ * css/layout.css - Fixed opacity for normal width slider current slide on small screens. Nav toggle styling.
+ * header.php - Added nav toggle for small resolutions
+ * includes/js/general.js - jQuery script for nav toggle
+ * includes/theme-options.php - added portfolio area post order and custom URL for portfolio items
+ * loop-portfolio.php,
+   includes/homepage-portfolio-panel.php - posts order and custom URL
+ * page.php - remove breadcrumb if static front page set.
+ 
+
+2012.02.13 - version 1.0.3
+ * includes/theme-actions.php - Added filter:none, so that custom BG styling works for alt styles with vertical gradients.
+ * styles/dark-glossy.css - IE styling
+ * includes/homepage-features-panel.php - added option to change the order of features in the features panel
+ * includes/theme-options.php - added option to change the order of features in the features panel
+ * style.css - Fixed dropdown menus.
+ * css/layout.css - Fixed dropdown menus
+ * includes/js/general.js - Added script to fix iPad dropdowns.
+
+2012.02.09 - version 1.0.2
+ * includes/js/respond-IE.js,
+   includes/js/third-party.js,
+   includes/theme-actions.php,
+   includes/theme-js.php - moved IE specific responsive JS to output in footer so IE8 doesn't crash
+ * style.css - IE8 fixes, adjusted homepage portfolio responsive layout, slider z-index fix
+ * includes/homepage-portfolio-panel.php - Changed image dimensions
+ * layout.css - Adjusted homepage portfolio margins
+ * includes/theme-options.php,
+   includes/theme-functions.php - removed single portfolio gallery option (not used)
+ * single-portfolio.php - tweaked lightbox gallery functionality
+ * styles/dark-wood.css,
+   dark-glossy.css - WooCommerce message font color.
+	
+2012.02.08 - version 1.0.1
+ * style.css - Portfolio page template sizes & margins
+ 						 - Fixed iPad horizontal scroll
+ 						 - added .last class styling
+ 						 - Fixed dropdowns for iPad
+ 						 - Removed slider navigation arrows from iPhone
+ 						 - Styled products on normal search result pages
+ * layout.css - Portfolio images sizes & margins
+ * includes/theme-actions.php - Removed user zoom limitation for touch devices
+ * loop-portfolio.php - Image sizes
+ * header.php - Removed viewport scaling tag here, as it is in theme-actions.php
+ * content-features.php - fixed timthumb image output issue
+ * loop-portfolio.php - fixed lighthouse duplicate image issue
+ * includes/theme-options.php,
+   includes/homepage-portfolio-panel.php,
+   includes/homepage-features-panel.php - Added option for custom URL for the features/portfolio module archives link 
+
+2012.02.07 - version 1.0
+ * First release!
